@@ -18,14 +18,6 @@ public class JpaMain {
 		tx.begin(); // Transaction 시작
 
 		try {
-			Order order = new Order();
-			em.persist(order);
-
-			OrderItem orderItem = new OrderItem();
-			orderItem.setOrder(order);
-
-			em.persist(orderItem);
-			tx.commit(); // Transaction 저장
 		} catch (Exception e) {
 			tx.rollback();
 		} finally {
