@@ -11,7 +11,7 @@ import javax.persistence.*;
 @AllArgsConstructor
 @Entity
 @Table(name = "ORDERITEM")
-public class OrderItem {
+public class OrderItem extends BaseEntity{
 	@Id
 	@GeneratedValue
 	@Column(name = "ORDER_ITEM_ID")
